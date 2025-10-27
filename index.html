@@ -1,51 +1,41 @@
 <!doctype html>
-<html lang="sl">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Moja prva stran</title>
+  <title>slon3studio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <h1>slon3studio</h1>
-    <p>Frontend začetnik – gradim svojo prvo spletno stran.</p>
-    <nav>
-      <a href="#o-meni">O meni</a>
-      <a href="#projekti">Projekti</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
+    <div class="header-content">
+      <img src="assets/logo.png" width="64" alt="slon3studio logo" />
+      <h1>slon3studio</h1>
+    
+      <nav class="site-nav">
+        <a href="about_us">About us</a>
+        <a href="projects">Projects</a>
+        <a href="contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section id="o-meni">
-      <h2>O meni</h2>
-      <p>Kratek opis, kaj rad delaš, kakšne cilje imaš.</p>
-      <img src="assets/profil.jpg" alt="Moja fotografija" width="240" />
+    <section class="welcome">
+      <h2>Welcome to slon3studio</h2>
+      <p>Your go-to place for innovative projects and creative solutions.</p>
+      <img src="assets/welcome_image.jpg" alt="Welcome Image" />
     </section>
 
-    <section id="projekti">
-      <h2>Projekti</h2>
-      <ul>
-        <li>Projekt 1 – en stavek opisa</li>
-        <li>Projekt 2 – en stavek opisa</li>
-      </ul>
-    </section>
-
-    <section id="kontakt">
-      <h2>Kontakt</h2>
-      <p>Piši mi: <a href="mailto:slon3studio@gmail.com">slon3studio@gmail.com</a></p>
-      <!-- (Opcijsko) preprost obrazec brez backend-a -->
-      <form onsubmit="return false;">
-        <input type="email" placeholder="Tvoj email" required />
-        <textarea placeholder="Sporočilo" required></textarea>
-        <button id="sendBtn">Pošlji</button>
-      </form>
+    <section class="latest-projects">
+      <h2>Latest Projects</h2>
+      <p>Check out some of our most recent work in various fields.</p>
+      <img src="assets/latest_projects.jpg" alt="Latest Projects" />
     </section>
   </main>
 
   <footer class="site-footer">
-    <small>© <span id="year"></span>Ivo Peterka</small>
+    <small>© <span id="year"></span>Ivo Peterka 2025</small>
   </footer>
 
   <script src="script.js"></script>
